@@ -11,15 +11,17 @@ information for cities, states, and countries.
 - [Project Technologies](#project-technologies)
 
 ## Screenshots
-<img src="" alt="App Screenshot" width="200" height="400"/> &#160;
-<img src="" alt="App Screenshot" width="200" height="400"/> &#160;
-<img src="" alt="App Screenshot" width="200" height="400"/> &#160;
-<img src="" alt="App Screenshot" width="200" height="400"/> &#160;
-<img src="" alt="App Screenshot" width="200" height="400"/> &#160;
-<img src="" alt="App Screenshot" width="200" height="400"/> &#160;
-<img src="" alt="App Screenshot" width="200" height="400"/> &#160;
-<img src="" alt="App Screenshot" width="200" height="400"/> &#160;
-<img src="" alt="App Screenshot" width="200" height="400"/> &#160;
+<img src="https://github.com/user-attachments/assets/4561e1f0-84c5-4627-a4ff-dda68ac44a8d" alt="App Screenshot" width="200" height="400"/> &#160;
+<img src="https://github.com/user-attachments/assets/3f7ef1b3-beb6-4838-9c4b-f1811107bf1f" alt="App Screenshot" width="200" height="400"/> &#160;
+<img src="https://github.com/user-attachments/assets/366204ff-f103-4c20-b76c-994fb49fc732" alt="App Screenshot" width="200" height="400"/> &#160;
+<img src="https://github.com/user-attachments/assets/9e550bab-4510-492c-a234-c358e8d8e4d7" alt="App Screenshot" width="200" height="400"/> &#160;
+<img src="https://github.com/user-attachments/assets/33c4dfc4-c04b-4188-b924-c4af53b3eca4" alt="App Screenshot" width="200" height="400"/> &#160;
+<img src="https://github.com/user-attachments/assets/202a0365-9a83-4d12-907f-e84a5ee60dea" alt="App Screenshot" width="200" height="400"/> &#160;
+<img src="https://github.com/user-attachments/assets/3a3343c6-4306-42d6-bf04-3098995ba692" alt="App Screenshot" width="200" height="400"/> &#160;
+<img src="https://github.com/user-attachments/assets/01564123-edd9-4da5-8461-3a1cb7a3e56e" alt="App Screenshot" width="200" height="400"/> &#160;
+<img src="https://github.com/user-attachments/assets/fac28528-b3c0-42b6-acb5-8c483d49346f" alt="App Screenshot" width="200" height="400"/> &#160;
+<img src="https://github.com/user-attachments/assets/6b85286c-690a-47d8-910f-d92efbb51f72" alt="App Screenshot" width="200" height="400"/> &#160;
+<img src="https://github.com/user-attachments/assets/3ac5aa4f-6102-47c9-8361-aa26a73ab877" alt="App Screenshot" width="200" height="400"/> &#160;
 
 ## Features
 - **API Calling:** Fetch accurate and up-to-date weather data for user-selected locations via reliable weather data APIs.
