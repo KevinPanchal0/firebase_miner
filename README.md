@@ -1,9 +1,11 @@
-# Sky Scrapper
+# FireBase Miner (Chat App)
 
-"Sky Scrapper" is a feature-rich weather application built using Flutter, incorporating key
-concepts such as API calling, Shared Preferences, and network connectivity. The app offers a
-comprehensive set of functionalities designed to provide users with accurate and timely weather
-information for cities, states, and countries.
+"Firebase Miner (Chat App)" aims to deliver a user-friendly and secure platform for two-way
+communication. By leveraging Firebase Authentication and Firebase Firestore Database, along
+with features like multiple sign-in methods, profile management, light and dark themes, splash
+screen, and individual ChatPages for each user, the app ensures a seamless and immersive chat
+experience for users. Whether connecting with friends, family, or colleagues, "Firebase Miner
+(Chat App)" empowers users to stay connected and chat effortlessly
 
 ## Table of Contents
 - [Screenshots](#screenshots)
