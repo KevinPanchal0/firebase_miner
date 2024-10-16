@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "798370020991",
+    "project_id": "chat-app-fbminer",
+    "storage_bucket": "chat-app-fbminer.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:798370020991:android:f9ec84b9d87ab0ae35494a",
+        "android_client_info": {
+          "package_name": "com.example.firebase_miner"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHE5QyuNe_1W3XWnrwfBZ8Ubbto58ejH4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
