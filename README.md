@@ -26,16 +26,15 @@ experience for users. Whether connecting with friends, family, or colleagues, "F
 <img src="https://github.com/user-attachments/assets/3ac5aa4f-6102-47c9-8361-aa26a73ab877" alt="App Screenshot" width="200" height="400"/> &#160;
 
 ## Features
-- **API Calling:** Fetch accurate and up-to-date weather data for user-selected locations via reliable weather data APIs.
-- **Shared Preferences:** Allow users to save favorite cities or states locally for quick access to weather details.
-- **Network Connectivity:** Implement network checks to ensure seamless data retrieval and display an error screen when the network is unavailable.
-- **Search by City/State/Country:** Enable users to search for weather details by entering a city, state, or country, displaying comprehensive meteorological data.
-- **Light & Dark Themes:** Offer customizable light and dark themes for a personalized and comfortable user experience.
-- **Splash Screen:** Display an engaging splash screen with the app logo or weather-related imagery to create a positive first impression.
-- **Detail Screen:** Provide a detailed weather overview for each selected location, including hourly and daily forecasts, precipitation chances, and sunrise/sunset times.
-  
+- **Firebase Authentication**: Multiple sign-in options, including Google Sign-in, Guest Sign-in, and Email/Password Sign-up/Sign-in, for secure and convenient access.
+- **Profile Page**: Users can view and manage their profile (display name, profile picture, etc.) and update information for a personalized experience.
+- **Light & Dark Themes**: Theme selection allows users to switch between light and dark modes for enhanced comfort.
+- **Splash Screen**: A welcoming splash screen greets users with an eye-catching design, showcasing the app logo or animation.
+- **Chat Pages**: Real-time chat functionality with a user-friendly interface for efficient, instant communication with other users.  
+
 ## Project Technologies
 - **Flutter**: For building a cross-platform mobile app with a responsive and visually appealing UI.
 - **Dart**: The programming language used with Flutter for app development.
+- **GetX**: For state management, routing, and dependency injection, offering a simple and efficient way to manage app logic.
 - **SharedPreferences**: For saving simple key-value pairs like theme preferences and language settings.
 - **Connectivity Plus (Flutter Plugin)**: For handling network connectivity checks and managing offline scenarios gracefully.
