@@ -21,7 +21,7 @@ class _SplashScreenState extends State<SplashScreen>
     await UserPreferences.init();
 
     Future.delayed(
-      Duration(seconds: 2),
+      const Duration(seconds: 2),
       () {
         Get.offAllNamed(UserPreferences.isUserLoggedIn() ? '/' : '/sign_in');
       },
