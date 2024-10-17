@@ -1,20 +1,19 @@
 import 'package:shared_preferences/shared_preferences.dart';
 
 class UserPreferences {
-  static late SharedPreferences _prefs;
+  static late SharedPreferences prefs;
 
-  static const _keyIsLoggedIn = 'isLoggedIn';
+  static const keyIsLoggedIn = 'isLoggedIn';
 
   static Future<void> init() async {
-    // This is the function you're asking about
-    _prefs = await SharedPreferences.getInstance();
+    prefs = await SharedPreferences.getInstance();
   }
 
   static Future<void> setUserLoggedIn(bool isLoggedIn) async {
-    await _prefs.setBool(_keyIsLoggedIn, isLoggedIn);
+    await prefs.setBool(keyIsLoggedIn, isLoggedIn);
   }
 
   static bool isUserLoggedIn() {
-    return _prefs.getBool(_keyIsLoggedIn) ?? false;
+    return prefs.getBool(keyIsLoggedIn) ?? false;
   }
 }
