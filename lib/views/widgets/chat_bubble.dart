@@ -30,6 +30,8 @@ class ChatBubble extends StatelessWidget {
     final textColor = isMe ? Colors.white : Colors.black87;
 
     return Container(
+      constraints:
+          BoxConstraints(maxWidth: MediaQuery.of(context).size.width * 0.75),
       margin: EdgeInsets.symmetric(vertical: 4),
       alignment: isMe ? Alignment.centerRight : Alignment.centerLeft,
       child: Column(
@@ -49,6 +51,7 @@ class ChatBubble extends StatelessWidget {
               children: [
                 Text(
                   message,
+                  softWrap: true,
                   style: TextStyle(color: textColor, fontSize: 16),
                 ),
                 const SizedBox(height: 5),

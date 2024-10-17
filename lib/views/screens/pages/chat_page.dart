@@ -218,10 +218,23 @@ class _ChatPageState extends State<ChatPage> {
                     }
                   },
                   decoration: InputDecoration(
-                    border: const OutlineInputBorder(
-                      borderSide: BorderSide(width: 1, color: Colors.grey),
-                      borderRadius: BorderRadius.all(Radius.circular(25.0)),
+                    hintText: 'Message',
+                    contentPadding: const EdgeInsets.symmetric(
+                        vertical: 10, horizontal: 20),
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(30), // Circular shape
+                      borderSide: const BorderSide(color: Colors.grey),
                     ),
+                    enabledBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(30),
+                      borderSide: const BorderSide(color: Colors.grey),
+                    ),
+                    focusedBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(30),
+                      borderSide: const BorderSide(color: Colors.blue),
+                    ),
+                    fillColor: Colors.grey.shade200, // Background color
+                    filled: true,
                     suffixIcon: IconButton(
                       onPressed: () async {
                         if (chatController.isEditing.value) {
