@@ -23,7 +23,7 @@ class _SplashScreenState extends State<SplashScreen>
     Future.delayed(
       const Duration(seconds: 2),
       () {
-        Get.offAllNamed(UserPreferences.isUserLoggedIn() ? '/' : '/sign_in');
+        Get.offAllNamed(UserPreferences.isUserLoggedIn() ? '/' : '/sign_up');
       },
     );
   }

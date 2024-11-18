@@ -1,6 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:firebase_miner/helpers/fb_helper.dart';
 import 'package:firebase_miner/models/fire_store_model.dart';
+import 'package:firebase_miner/utils/helpers/fb_helper.dart';
+import 'package:firebase_miner/utils/helpers/fcm_helper.dart';
 
 class FsHelper {
   FsHelper._();
@@ -34,6 +35,7 @@ class FsHelper {
       await firebaseFirestore.collection('users').doc('User_$id').set({
         'name': fsModel.name,
         'email': fsModel.email,
+        'token': fsModel.token,
         'timestamp': fsModel.timestamp,
       });
 
@@ -52,7 +54,10 @@ class FsHelper {
   }
 
   //send msg
-  sendMessage({required String msg, required String receiverEmail}) async {
+  sendMessage(
+      {required String msg,
+      required String receiverEmail,
+      required String token}) async {
     String? senderMail = FbHelper.firebaseAuth.currentUser!.email;
 
     bool isUserExists = false;
@@ -97,6 +102,8 @@ class FsHelper {
         'timeStamp': FieldValue.serverTimestamp(),
       },
     );
+    await FcmHelper.fcmHelper
+        .sendFCM(title: senderMail!, body: msg, token: token);
   }
 
   //fetch messages

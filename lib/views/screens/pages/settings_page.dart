@@ -1,6 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_miner/controllers/theme_controller.dart';
-import 'package:firebase_miner/helpers/fb_helper.dart';
+import 'package:firebase_miner/utils/helpers/fb_helper.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:toggle_list/toggle_list.dart';

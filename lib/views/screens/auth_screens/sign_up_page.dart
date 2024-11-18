@@ -1,9 +1,10 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:firebase_miner/helpers/fb_helper.dart';
-import 'package:firebase_miner/helpers/fs_helper.dart';
 import 'package:firebase_miner/models/fire_store_model.dart';
 import 'package:firebase_miner/prefs/user_preferences.dart';
+import 'package:firebase_miner/utils/helpers/fb_helper.dart';
+import 'package:firebase_miner/utils/helpers/fcm_helper.dart';
+import 'package:firebase_miner/utils/helpers/fs_helper.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -22,6 +23,16 @@ class _SignUpPageState extends State<SignUpPage> {
   String? name;
   String? email;
   String? password;
+  String? token;
+  getToken() async {
+    token = await FcmHelper.fcmHelper.fetchFCMToken();
+  }
+
+  @override
+  void initState() {
+    getToken();
+    super.initState();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -164,6 +175,7 @@ class _SignUpPageState extends State<SignUpPage> {
                   FireStoreModel fsModel = FireStoreModel(
                       name: user.displayName!,
                       email: user.email!,
+                      token: token!,
                       timestamp: FieldValue.serverTimestamp());
                   await FsHelper.fsHelper.addUsers(fsModel: fsModel);
                   await UserPreferences.setUserLoggedIn(true);
@@ -202,6 +214,7 @@ class _SignUpPageState extends State<SignUpPage> {
                       User user = res['user'];
                       FireStoreModel fsModel = FireStoreModel(
                         name: name!,
+                        token: token!,
                         email: user.email!,
                         timestamp: FieldValue.serverTimestamp(),
                       );

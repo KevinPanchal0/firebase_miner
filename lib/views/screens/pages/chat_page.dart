@@ -1,7 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_miner/controllers/chat_controller.dart';
-import 'package:firebase_miner/helpers/fb_helper.dart';
-import 'package:firebase_miner/helpers/fs_helper.dart';
+import 'package:firebase_miner/utils/helpers/fb_helper.dart';
+import 'package:firebase_miner/utils/helpers/fs_helper.dart';
 import 'package:firebase_miner/views/widgets/chat_bubble.dart';
 import 'package:floating_snackbar/floating_snackbar.dart';
 import 'package:flutter/material.dart';
@@ -197,9 +197,9 @@ class _ChatPageState extends State<ChatPage> {
                     } else {
                       if (msgController.text.isNotEmpty) {
                         await FsHelper.fsHelper.sendMessage(
-                          msg: msgController.text,
-                          receiverEmail: receiverEmail.data()['email'],
-                        );
+                            msg: msgController.text,
+                            receiverEmail: receiverEmail.data()['email'],
+                            token: receiverEmail.data()['token']);
                         setState(() {});
                         FocusManager.instance.primaryFocus?.unfocus();
                         msgController.clear();
@@ -253,6 +253,7 @@ class _ChatPageState extends State<ChatPage> {
                             await FsHelper.fsHelper.sendMessage(
                               msg: msgController.text,
                               receiverEmail: receiverEmail.data()['email'],
+                              token: receiverEmail.data()['email'],
                             );
                             setState(() {});
                             FocusManager.instance.primaryFocus?.unfocus();

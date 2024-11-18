@@ -46,6 +46,10 @@ dependencies:
   intl:
   floating_snackbar: ^1.0.5
   toggle_list: ^0.3.1
+  firebase_messaging:
+  flutter_local_notifications:
+  googleapis_auth: ^1.6.0
+  http:
 
 dev_dependencies:
   flutter_test:
@@ -75,6 +79,7 @@ flutter:
   #   - images/a_dot_ham.jpeg
   assets:
     - assets/icons/
+    - assets/chat-app-fbminer-firebase-adminsdk-q3yaf-cd9a5f942c.json
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
 

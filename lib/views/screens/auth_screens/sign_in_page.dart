@@ -1,4 +1,4 @@
-import 'package:firebase_miner/helpers/fb_helper.dart';
+import 'package:firebase_miner/utils/helpers/fb_helper.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

@@ -1,7 +1,8 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:firebase_miner/helpers/fb_helper.dart';
-import 'package:firebase_miner/helpers/fs_helper.dart';
+import 'package:firebase_miner/utils/helpers/fb_helper.dart';
+import 'package:firebase_miner/utils/helpers/fcm_helper.dart';
+import 'package:firebase_miner/utils/helpers/fs_helper.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -14,8 +15,19 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   User? user;
+
+  getToken() async {
+    await FcmHelper.fcmHelper.fetchFCMToken();
+  }
+
+  loadNotification() async {
+    await FcmHelper.fcmHelper.requestFCMNotificationPermission();
+  }
+
   @override
   void initState() {
+    loadNotification();
+    getToken();
     super.initState();
   }
 
